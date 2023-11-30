@@ -8,8 +8,18 @@ package Abstract;
  *
  * @author PC
  */
-public abstract class Pet {
+public class Cat extends Pet  {
     
+    String name;
 
-    public abstract void Color();
+    Cat(String name) {
+        this.name = name;
+    }
+
+  
+    public void Color() {
+        System.out.println(name + " is an orange Cat");
+    }
+
 }
+
